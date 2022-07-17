@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Lato:ital,wght@1,300&family=Rubik&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section id="container">
+        <div>
+            <img id="f"src="animated-festivity-and-celebration-image-0140.gif"width="" height="250">
+            <img src="hbd.gif" width="600" height="280">
+            <img id="f"src="animated-festivity-and-celebration-image-0140.gif"width="" height="250">
+
+           </div>
+        <div class="pr">
+            <div class="h21">
+            <h2>&nbsp &nbspCOUNTDOWN &nbsp &nbsp TIME&nbsp &nbsp</h2>
+          </div>
+                    <div class="countdown">
+
+                <div class="day" id="p">
+                    <h3 class="DAY">TIME</h3>
+                    <br>
+                    <h3>D</h3>
+                </div>       
+           
+                <div class="hours" id="p">
+                    <h3 class="HOURS">TIME</h3>
+                    <h3>H</h3>              
+                </div>
+            
+                <div class="MINUTES" id="p">
+                    <h3 class="min">TIME</h3>
+                    <h3>M</h3>
+                </div>
+           
+            
+                <div class="SECONDS" id="p">
+                    <h3 class="sec">TIME</h3>
+                    <h3>S</h3>
+                </div>
+
+            </div>
+        
+        </div>
+        <section id="gif">
+            <img id="f"src="excited.gif"width="" height="250">
+            <img id="f"src="excited.gif"width="" height="250">
+
+        </section>
+        <div class="t">
+            <h2>MADE BY --SHUBHAM ANAND</h2>
+        </section>
+        
+
+    </section>
+    
+
+    <script >
+        
+     const coutd=() =>{   
+    var countdate = new Date("july 29,2022 10:00:00").getTime() ;
+    var now = new Date().getTime();
+    const rem = countdate-now;
+    const sec = 1000;
+    const min =  sec*60;
+    const hr = min*60;
+    const day = hr*24; 
+    const td = Math.floor(rem/day);
+    console.log(td);
+    const th= Math.floor((rem%day)/hr);
+    console.log(th);
+    const tm = Math.floor((rem%hr)/min);
+    console.log(tm);
+    const ts = Math.floor((rem%min)/sec);
+    console.log(ts);
+    document.querySelector(".DAY").innerText =td;
+    document.querySelector(".HOURS").innerText =th;
+    document.querySelector(".min").innerText =tm;
+    document.querySelector(".sec").innerText =ts;
+     }
+     setInterval(coutd,100)
+    
+
+
+
+       
+    
+
+
+    </script>
+</body>
+</html>
